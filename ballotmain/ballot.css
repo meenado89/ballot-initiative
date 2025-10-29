@@ -1,0 +1,154 @@
+/* --- Navbar Styling --- */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 8rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.navi {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    /* margin-right: 6rem; */
+}
+
+.navi li {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navi li:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.card-container {
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    margin-top: 6%;
+
+}
+
+/* HERO SECTION  */
+
+.hero {
+    min-width: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e8ecf1);
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+}
+
+.brand-text {
+    color: #3c8dbc;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero-btn {
+    background: linear-gradient(90deg, #3c8dbc, #5fa8d3);
+    border: none;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-btn:hover {
+    background: linear-gradient(90deg, #5fa8d3, #3c8dbc);
+    transform: scale(1.05);
+}
+
+.heroimg img {
+    transition: transform 0.3s ease;
+    max-width: 70%;
+    max-height: 40%;
+}
+
+.heroimg img:hover {
+    transform: scale(1.05);
+}
+
+/* INFO CARD */
+.infocard img {
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    top: 30px;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-text {
+    text-wrap: initial;
+    text-align: justify;
+}
+
+.infocard {
+    /* border: 0.5px solid rgba(114, 111, 111, 0.219); */
+    box-shadow:inset 4px 8px 16px rgba(108, 104, 104, 0.475);
+    min-height: auto;
+    max-height: 18rem;
+    transition: color 0.1s ease, transform 0.2s ease-in-out;
+
+}
+
+.infocard:hover {
+    transform: translateY(-3px);
+    box-shadow:  4px 8px 12px  rgba(108, 104, 104, 0.57);
+}
+
+.Poll-btn {
+    background-color: #333;
+    /* not sure if this shadow looks good enough */
+    /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.345); */
+    color: aliceblue;
+    border: none;
+    width: 70px;
+    height: 2.5rem;
+    border-radius: 4px;
+
+}
+
+.Pbutton {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 50px;    
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.Poll-btn:hover {
+    background-color: rgb(99, 103, 107);
+    color: black;
+    box-shadow: 2px 4px 8px rgba(20, 20, 20, 0.784);
+}
